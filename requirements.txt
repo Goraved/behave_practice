@@ -1,0 +1,9 @@
+behave
+allure-behave
+configparser
+pluggy
+py
+pylint-fail-under
+PyYaml
+selenium
+webdriver-manager
