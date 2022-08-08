@@ -6,3 +6,4 @@ to the text feature files.
 
 To be honest, I didn't have a troubles to start this PoC. Allure report integrated easily, setup/teardown logic also 
 setup without any troubles, but write separate methods with text decorators for each step is so annoying.
+
