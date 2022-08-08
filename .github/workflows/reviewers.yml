@@ -7,10 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Add Reviewers
-      uses: madrapps/add-reviewers@v1
-      with:
+    - name: Add Pull Request Reviewer
+      uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
+      with: 
+        reviewers: "Goraved"
         token: ${{ secrets.GITHUB_TOKEN }}
-        reviewers: Net-burst
-        re-request-when-approved: true
-        re-request-when-changes-requested: true
