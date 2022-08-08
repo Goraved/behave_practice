@@ -1,14 +1,12 @@
-name: Add Reviewers
+name: Review Assign
 
 on:
   pull_request:
 
 jobs:
-  build:
+  assign:
     runs-on: ubuntu-latest
     steps:
-    - name: Add Pull Request Reviewer
-      uses: AveryCameronUofR/add-reviewer-gh-action@1.0.3
-      with: 
-        reviewers: "Goraved"
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: hkusu/review-assign-action@v1
+        with:
+          reviewers: goraved
